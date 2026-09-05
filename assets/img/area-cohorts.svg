@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 240" width="600" height="240" role="img" aria-label="Swimlane timeline of a retrospective cohort split into two exposure groups">
+  <style>
+    .bg    { fill: #3d6647; opacity: .05; }
+    .rule  { stroke: #3d6647; opacity: .3; stroke-width: 1.25; fill: none; }
+    .split { stroke: #3d6647; opacity: .55; stroke-width: 1.5; fill: none; stroke-dasharray: 6 5; }
+    .barA  { fill: #3d6647; opacity: .75; }
+    .barB  { fill: #3d6647; opacity: .35; }
+    .cap   { fill: #3d6647; opacity: .95; }
+    .lbl   { fill: #3d6647; opacity: .8; font: 600 11px -apple-system, "Segoe UI", Roboto, sans-serif; letter-spacing: .08em; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #82b393; opacity: .07; }
+      .rule, .split { stroke: #82b393; }
+      .barA, .barB, .cap, .lbl { fill: #82b393; }
+    }
+  </style>
+  <rect class="bg" x="0" y="0" width="600" height="240"/>
+
+  <!-- index date -->
+  <path class="split" d="M150 26 V208"/>
+  <text class="lbl" x="150" y="20" text-anchor="middle">INDEX PROCEDURE</text>
+
+  <!-- baseline axis -->
+  <path class="rule" d="M62 208 H552"/>
+
+  <!-- group A: early exposure -->
+  <g class="barA">
+    <rect x="150" y="36"  width="298" height="9" rx="4.5"/>
+    <rect x="150" y="54"  width="352" height="9" rx="4.5"/>
+    <rect x="150" y="72"  width="256" height="9" rx="4.5"/>
+    <rect x="150" y="90"  width="384" height="9" rx="4.5"/>
+  </g>
+  <g class="cap">
+    <circle cx="448" cy="40.5" r="5"/><circle cx="502" cy="58.5" r="5"/>
+    <circle cx="406" cy="76.5" r="5"/><circle cx="534" cy="94.5" r="5"/>
+  </g>
+
+  <!-- divider between arms -->
+  <path class="rule" d="M62 112 H552" opacity=".22"/>
+
+  <!-- group B: delayed exposure -->
+  <g class="barB">
+    <rect x="150" y="126" width="214" height="9" rx="4.5"/>
+    <rect x="150" y="144" width="176" height="9" rx="4.5"/>
+    <rect x="150" y="162" width="262" height="9" rx="4.5"/>
+    <rect x="150" y="180" width="198" height="9" rx="4.5"/>
+  </g>
+  <g class="cap" opacity=".6">
+    <circle cx="364" cy="130.5" r="5"/><circle cx="326" cy="148.5" r="5"/>
+    <circle cx="412" cy="166.5" r="5"/><circle cx="348" cy="184.5" r="5"/>
+  </g>
+
+  <!-- pre-index look-back -->
+  <g class="barB" opacity=".22">
+    <rect x="70" y="36"  width="76" height="9" rx="4.5"/>
+    <rect x="86" y="54"  width="60" height="9" rx="4.5"/>
+    <rect x="74" y="72"  width="72" height="9" rx="4.5"/>
+    <rect x="94" y="90"  width="52" height="9" rx="4.5"/>
+    <rect x="80" y="126" width="66" height="9" rx="4.5"/>
+    <rect x="98" y="144" width="48" height="9" rx="4.5"/>
+    <rect x="72" y="162" width="74" height="9" rx="4.5"/>
+    <rect x="90" y="180" width="56" height="9" rx="4.5"/>
+  </g>
+
+  <text class="lbl" x="62" y="228">FOLLOW-UP TIME &#8594;</text>
+</svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 240" width="600" height="240" role="img" aria-label="Lipid emulsion droplets sequestering drug molecules alongside a recovering cardiac pressure trace">
+  <style>
+    .bg    { fill: #7a3b4a; opacity: .05; }
+    .drop  { stroke: #7a3b4a; stroke-width: 1.75; fill: #7a3b4a; fill-opacity: .1; }
+    .core  { fill: #7a3b4a; opacity: .55; }
+    .free  { fill: #7a3b4a; opacity: .3; }
+    .trace { stroke: #7a3b4a; stroke-width: 2.5; fill: none; stroke-linejoin: round; stroke-linecap: round; }
+    .rule  { stroke: #7a3b4a; opacity: .3; stroke-width: 1.25; fill: none; }
+    .arrow { stroke: #7a3b4a; opacity: .5; stroke-width: 1.5; fill: none; stroke-dasharray: 4 4; }
+    .lbl   { fill: #7a3b4a; opacity: .8; font: 600 11px -apple-system, "Segoe UI", Roboto, sans-serif; letter-spacing: .08em; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #d18b9d; opacity: .07; }
+      .drop { stroke: #d18b9d; fill: #d18b9d; }
+      .trace, .rule, .arrow { stroke: #d18b9d; }
+      .core, .free, .lbl { fill: #d18b9d; }
+    }
+  </style>
+  <rect class="bg" x="0" y="0" width="600" height="240"/>
+
+  <!-- emulsion droplets with sequestered drug -->
+  <g>
+    <circle class="drop" cx="88" cy="82" r="34"/>
+    <g class="core"><circle cx="78" cy="74" r="4.5"/><circle cx="96" cy="88" r="4.5"/><circle cx="84" cy="96" r="3.5"/></g>
+
+    <circle class="drop" cx="176" cy="140" r="42"/>
+    <g class="core"><circle cx="164" cy="130" r="5"/><circle cx="188" cy="142" r="5"/><circle cx="170" cy="156" r="4"/><circle cx="192" cy="122" r="3.5"/></g>
+
+    <circle class="drop" cx="258" cy="66" r="26"/>
+    <g class="core"><circle cx="250" cy="60" r="4"/><circle cx="266" cy="72" r="4"/></g>
+  </g>
+
+  <!-- free drug being drawn in -->
+  <g class="free">
+    <circle cx="128" cy="46" r="4"/><circle cx="222" cy="106" r="4"/>
+    <circle cx="120" cy="180" r="4"/><circle cx="232" cy="176" r="3.5"/>
+    <circle cx="46" cy="140" r="3.5"/><circle cx="292" cy="120" r="3.5"/>
+  </g>
+  <g class="arrow">
+    <path d="M126 54 L110 66"/>
+    <path d="M220 112 L206 122"/>
+    <path d="M124 174 L142 164"/>
+  </g>
+
+  <!-- recovering pressure trace -->
+  <path class="rule" d="M330 200 H556"/>
+  <path class="trace" d="M330 186
+     L340 182 L346 194 L352 168 L358 190 L364 184
+     L376 180 L382 192 L388 150 L394 188 L400 180
+     L414 172 L420 190 L426 120 L432 186 L438 172
+     L452 160 L458 188 L464 88  L470 184 L476 160
+     L492 146 L498 186 L504 62  L510 182 L516 148
+     L532 138 L538 184 L544 48  L550 180 L556 146"/>
+  <text class="lbl" x="330" y="222">RETURN OF CONTRACTILITY</text>
+  <text class="lbl" x="46" y="222">SCAVENGING</text>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 240" width="600" height="240" role="img" aria-label="A network of model nodes feeding a manuscript with a disclosure statement">
+  <style>
+    .bg   { fill: #4a4470; opacity: .05; }
+    .edge { stroke: #4a4470; opacity: .3; stroke-width: 1.25; fill: none; }
+    .node { fill: #4a4470; opacity: .45; }
+    .node--on { fill: #4a4470; opacity: .95; }
+    .page { stroke: #4a4470; stroke-width: 2; fill: none; opacity: .85; }
+    .line { stroke: #4a4470; stroke-width: 3; opacity: .28; stroke-linecap: round; }
+    .chk  { stroke: #4a4470; stroke-width: 2.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+    .ring { stroke: #4a4470; stroke-width: 1.5; fill: none; opacity: .55; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #a49ed6; opacity: .07; }
+      .edge, .page, .line, .chk, .ring { stroke: #a49ed6; }
+      .node, .node--on { fill: #a49ed6; }
+    }
+  </style>
+  <rect class="bg" x="0" y="0" width="600" height="240"/>
+
+  <!-- three-layer network -->
+  <g class="edge">
+    <path d="M78 62 L168 52 M78 62 L168 120 M78 62 L168 188"/>
+    <path d="M78 120 L168 52 M78 120 L168 120 M78 120 L168 188"/>
+    <path d="M78 178 L168 52 M78 178 L168 120 M78 178 L168 188"/>
+    <path d="M168 52 L262 86 M168 52 L262 154"/>
+    <path d="M168 120 L262 86 M168 120 L262 154"/>
+    <path d="M168 188 L262 86 M168 188 L262 154"/>
+    <path d="M262 86 L344 120 M262 154 L344 120"/>
+  </g>
+
+  <g class="node">
+    <circle cx="78" cy="62" r="7"/><circle cx="78" cy="120" r="7"/><circle cx="78" cy="178" r="7"/>
+    <circle cx="168" cy="52" r="8"/><circle cx="168" cy="120" r="8"/><circle cx="168" cy="188" r="8"/>
+    <circle cx="262" cy="86" r="8"/><circle cx="262" cy="154" r="8"/>
+  </g>
+  <circle class="node--on" cx="344" cy="120" r="9"/>
+  <circle class="ring" cx="344" cy="120" r="17"/>
+
+  <!-- manuscript page -->
+  <path class="page" d="M400 36 H548 a6 6 0 0 1 6 6 V198 a6 6 0 0 1 -6 6 H400 a6 6 0 0 1 -6 -6 V42 a6 6 0 0 1 6 -6 Z"/>
+  <g class="line">
+    <path d="M416 70 H532"/><path d="M416 88 H532"/><path d="M416 106 H508"/>
+    <path d="M416 124 H532"/><path d="M416 142 H488"/>
+  </g>
+
+  <!-- disclosure statement block -->
+  <rect x="410" y="160" width="128" height="30" rx="4" class="ring"/>
+  <path class="chk" d="M421 175 l6 7 l12 -15"/>
+  <g class="line" opacity=".38">
+    <path d="M448 170 H528" stroke-width="2.5"/><path d="M448 181 H510" stroke-width="2.5"/>
+  </g>
+</svg>

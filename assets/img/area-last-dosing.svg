@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 240" width="600" height="240" role="img" aria-label="Plasma local anesthetic concentration curves crossing a toxic threshold">
+  <style>
+    .bg    { fill: #1f4e5f; opacity: .05; }
+    .rule  { stroke: #1f4e5f; opacity: .35; stroke-width: 1.25; fill: none; }
+    .thr   { stroke: #1f4e5f; opacity: .65; stroke-width: 1.5; fill: none; stroke-dasharray: 6 5; }
+    .curve { stroke: #1f4e5f; stroke-width: 2.5; fill: none; stroke-linecap: round; }
+    .curve2{ stroke: #1f4e5f; stroke-width: 2; fill: none; opacity: .45; stroke-linecap: round; }
+    .fill  { fill: #1f4e5f; opacity: .16; }
+    .lbl   { fill: #1f4e5f; opacity: .8; font: 600 11px -apple-system, "Segoe UI", Roboto, sans-serif; letter-spacing: .08em; }
+    .dot   { fill: #1f4e5f; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #7fb3c4; opacity: .07; }
+      .rule, .thr, .curve, .curve2 { stroke: #7fb3c4; }
+      .fill, .lbl, .dot { fill: #7fb3c4; }
+    }
+  </style>
+  <rect class="bg" x="0" y="0" width="600" height="240"/>
+
+  <!-- axes -->
+  <path class="rule" d="M62 198 H548"/>
+  <path class="rule" d="M62 198 V28"/>
+
+  <!-- toxic threshold -->
+  <path class="thr" d="M62 82 H548"/>
+  <text class="lbl" x="548" y="74" text-anchor="end">TOXIC THRESHOLD</text>
+
+  <!-- area above threshold for the higher-dose curve -->
+  <path class="fill" d="M150 82 C182 40 214 34 246 44 C278 54 300 70 316 82 Z"/>
+
+  <!-- repeated-bolus / catheter curve breaching threshold -->
+  <path class="curve" d="M62 190 C96 186 122 150 150 82 C182 40 214 34 246 44 C278 54 300 70 316 96 C336 128 360 150 392 164 C428 180 470 188 548 192"/>
+
+  <!-- weight-based, lower-dose curve staying below -->
+  <path class="curve2" d="M62 194 C104 190 132 168 168 138 C204 110 236 104 268 112 C304 122 336 152 380 172 C428 190 486 194 548 196"/>
+
+  <!-- dosing markers along the x axis -->
+  <g class="dot">
+    <circle cx="150" cy="198" r="3.5"/><circle cx="246" cy="198" r="3.5"/>
+    <circle cx="342" cy="198" r="3.5"/><circle cx="438" cy="198" r="3.5"/>
+  </g>
+
+  <text class="lbl" x="62" y="222">TIME AFTER FIRST DOSE</text>
+  <text class="lbl" x="18" y="36" transform="rotate(-90 18 36)">PLASMA CONCENTRATION</text>
+</svg>
