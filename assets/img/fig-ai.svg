@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 280" width="780" height="280" role="img" aria-label="Disclosure framework for AI use in scientific writing: where to declare it (submission system and methods), what to declare (software model and version, publisher and location, date used), and the nine categories of use requiring detail.">
+  <style>
+    .ink    { fill: #17191c; }
+    .muted  { fill: #767c85; }
+    .rule   { stroke: #e0dfda; stroke-width: 1; fill: none; }
+    .hair   { stroke: #c9c8c3; stroke-width: 1; fill: none; }
+    .mark   { fill: #1c4f7c; }
+    .stroke { stroke: #1c4f7c; fill: none; }
+    .soft   { fill: #1c4f7c; fill-opacity: .12; }
+    .t      { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .lbl    { font-size: 13px; }
+    .val    { font-size: 12px; font-variant-numeric: tabular-nums; }
+    .ax     { font-size: 11px; }
+    .cap    { font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; }
+    @media (prefers-color-scheme: dark) {
+      .ink    { fill: #e9e8e4; }
+      .muted  { fill: #8d939b; }
+      .rule   { stroke: #2a2e33; }
+      .hair   { stroke: #3c4147; }
+      .mark   { fill: #6fa8d6; }
+      .stroke { stroke: #6fa8d6; }
+      .soft   { fill: #6fa8d6; fill-opacity: .16; }
+    }
+  </style>
+  <text class="t cap muted" x="0" y="12">What must be declared</text>
+  <path class="rule" d="M0 24 H780"/>
+  <text class="t ink" style="font-size:17px;font-weight:600" x="0" y="48">Where</text>
+  <text class="t lbl muted" x="150" y="48">Online submission system, and again in the methods</text>
+  <path class="rule" d="M0 70 H780"/>
+  <text class="t ink" style="font-size:17px;font-weight:600" x="0" y="94">What</text>
+  <text class="t lbl muted" x="150" y="94">Software model and version · publisher and location · date used</text>
+  <path class="rule" d="M0 116 H780"/>
+  <text class="t ink" style="font-size:17px;font-weight:600" x="0" y="140">Detail</text>
+  <text class="t lbl muted" x="150" y="140">For each of these uses</text>
+  <circle class="mark" cx="153" cy="166" r="3"/>
+  <text class="t lbl ink" x="165" y="170">Writing &amp; translation</text>
+  <circle class="mark" cx="363" cy="166" r="3"/>
+  <text class="t lbl ink" x="375" y="170">Hypothesis generation</text>
+  <circle class="mark" cx="573" cy="166" r="3"/>
+  <text class="t lbl ink" x="585" y="170">Background research</text>
+  <circle class="mark" cx="153" cy="194" r="3"/>
+  <text class="t lbl ink" x="165" y="198">Data analysis &amp; interpretation</text>
+  <circle class="mark" cx="363" cy="194" r="3"/>
+  <text class="t lbl ink" x="375" y="198">Methods development</text>
+  <circle class="mark" cx="573" cy="194" r="3"/>
+  <text class="t lbl ink" x="585" y="198">Audio / video generation</text>
+  <circle class="mark" cx="153" cy="222" r="3"/>
+  <text class="t lbl ink" x="165" y="226">Table &amp; figure generation</text>
+  <circle class="mark" cx="363" cy="222" r="3"/>
+  <text class="t lbl ink" x="375" y="226">Reference identification</text>
+  <circle class="mark" cx="573" cy="222" r="3"/>
+  <text class="t lbl ink" x="585" y="226">Ethical concerns of use</text>
+  <path class="rule" d="M0 246 H780"/>
+  <text class="t ax muted" x="0" y="268">Responsibility for verifying every AI-assisted claim stays with the human author.</text>
+</svg>

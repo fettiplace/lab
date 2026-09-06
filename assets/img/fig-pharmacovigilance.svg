@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 380" width="780" height="380" role="img" aria-label="Forest plot: reporting odds ratio of cardiac arrest by anesthetic drug class. Reversal agents 2.00, paralytics 1.37 and volatile agents 1.25 sit above 1.0; IV anesthetics 0.90, amide-linked local anesthetics 0.64, ester-linked local anesthetics 0.41, opioids 0.33 and anti-emetics 0.19 sit below.">
+  <style>
+    .ink    { fill: #17191c; }
+    .muted  { fill: #767c85; }
+    .rule   { stroke: #e0dfda; stroke-width: 1; fill: none; }
+    .hair   { stroke: #c9c8c3; stroke-width: 1; fill: none; }
+    .mark   { fill: #1c4f7c; }
+    .stroke { stroke: #1c4f7c; fill: none; }
+    .soft   { fill: #1c4f7c; fill-opacity: .12; }
+    .t      { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .lbl    { font-size: 13px; }
+    .val    { font-size: 12px; font-variant-numeric: tabular-nums; }
+    .ax     { font-size: 11px; }
+    .cap    { font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; }
+    @media (prefers-color-scheme: dark) {
+      .ink    { fill: #e9e8e4; }
+      .muted  { fill: #8d939b; }
+      .rule   { stroke: #2a2e33; }
+      .hair   { stroke: #3c4147; }
+      .mark   { fill: #6fa8d6; }
+      .stroke { stroke: #6fa8d6; }
+      .soft   { fill: #6fa8d6; fill-opacity: .16; }
+    }
+  </style>
+  <path class="hair" d="M605.6 34 V312" stroke-dasharray="4 4"/>
+  <text class="t ax muted" x="605.6" y="28" text-anchor="middle">no signal</text>
+  <g>
+    <text class="t lbl ink" x="4" y="60">Reversal agents</text>
+    <text class="t val muted" x="270" y="60" text-anchor="end">2.00 (1.75–2.28)</text>
+    <path class="stroke" stroke-width="2" stroke-linecap="round" d="M699.9 56 H744.5"/>
+    <path class="stroke" stroke-width="1.5" d="M699.9 52 V60 M744.5 52 V60"/>
+    <circle class="mark" cx="722.4" cy="56" r="4.5"/>
+  </g>
+  <g>
+    <text class="t lbl ink" x="4" y="94">Paralytics</text>
+    <text class="t val muted" x="270" y="94" text-anchor="end">1.37 (1.26–1.50)</text>
+    <path class="stroke" stroke-width="2" stroke-linecap="round" d="M644.6 90 H673.9"/>
+    <path class="stroke" stroke-width="1.5" d="M644.6 86 V94 M673.9 86 V94"/>
+    <circle class="mark" cx="658.7" cy="90" r="4.5"/>
+  </g>
+  <g>
+    <text class="t lbl ink" x="4" y="128">Volatile agents</text>
+    <text class="t val muted" x="270" y="128" text-anchor="end">1.25 (1.11–1.41)</text>
+    <path class="stroke" stroke-width="2" stroke-linecap="round" d="M623.2 124 H663.5"/>
+    <path class="stroke" stroke-width="1.5" d="M623.2 120 V128 M663.5 120 V128"/>
+    <circle class="mark" cx="643.2" cy="124" r="4.5"/>
+  </g>
+  <g>
+    <text class="t lbl ink" x="4" y="162">IV anesthetics</text>
+    <text class="t val muted" x="270" y="162" text-anchor="end">0.90 (0.83–0.96)</text>
+    <path class="stroke" stroke-width="2" stroke-linecap="round" d="M574.2 158 H598.7"/>
+    <path class="stroke" stroke-width="1.5" d="M574.2 154 V162 M598.7 154 V162"/>
+    <circle class="mark" cx="587.9" cy="158" r="4.5"/>
+  </g>
+  <g>
+    <text class="t lbl ink" x="4" y="196">Amide-linked LAs</text>
+    <text class="t val muted" x="270" y="196" text-anchor="end">0.64 (0.59–0.69)</text>
+    <path class="stroke" stroke-width="2" stroke-linecap="round" d="M516.7 192 H543.1"/>
+    <path class="stroke" stroke-width="1.5" d="M516.7 188 V196 M543.1 188 V196"/>
+    <circle class="mark" cx="530.4" cy="192" r="4.5"/>
+  </g>
+  <g>
+    <text class="t lbl ink" x="4" y="230">Ester-linked LAs</text>
+    <text class="t val muted" x="270" y="230" text-anchor="end">0.41 (0.27–0.61)</text>
+    <path class="stroke" stroke-width="2" stroke-linecap="round" d="M385.0 226 H522.3"/>
+    <path class="stroke" stroke-width="1.5" d="M385.0 222 V230 M522.3 222 V230"/>
+    <circle class="mark" cx="455.4" cy="226" r="4.5"/>
+  </g>
+  <g>
+    <text class="t lbl ink" x="4" y="264">Opioids</text>
+    <text class="t val muted" x="270" y="264" text-anchor="end">0.33 (0.31–0.36)</text>
+    <path class="stroke" stroke-width="2" stroke-linecap="round" d="M408.3 260 H433.5"/>
+    <path class="stroke" stroke-width="1.5" d="M408.3 256 V264 M433.5 256 V264"/>
+    <circle class="mark" cx="418.8" cy="260" r="4.5"/>
+  </g>
+  <g>
+    <text class="t lbl ink" x="4" y="298">Anti-emetics</text>
+    <text class="t val muted" x="270" y="298" text-anchor="end">0.19 (0.18–0.21)</text>
+    <path class="stroke" stroke-width="2" stroke-linecap="round" d="M316.7 294 H342.7"/>
+    <path class="stroke" stroke-width="1.5" d="M316.7 290 V298 M342.7 290 V298"/>
+    <circle class="mark" cx="325.8" cy="294" r="4.5"/>
+  </g>
+  <path class="rule" d="M286.0 316 H760.0"/>
+  <path class="rule" d="M334.5 316 V321"/>
+  <text class="t ax muted" x="334.5" y="335" text-anchor="middle">0.2</text>
+  <path class="rule" d="M488.8 316 V321"/>
+  <text class="t ax muted" x="488.8" y="335" text-anchor="middle">0.5</text>
+  <path class="rule" d="M605.6 316 V321"/>
+  <text class="t ax muted" x="605.6" y="335" text-anchor="middle">1.0</text>
+  <path class="rule" d="M722.4 316 V321"/>
+  <text class="t ax muted" x="722.4" y="335" text-anchor="middle">2</text>
+  <text class="t cap muted" x="286.0" y="358">Reporting odds ratio of cardiac arrest (95% CI)</text>
+</svg>
