@@ -13,18 +13,17 @@ fettiplace-lab-site/
 ├── assets/img/
 │   ├── fig-pharmacovigilance.svg  ← forest plot (real VigiBase data)
 │   ├── fig-dosing.svg             ← cumulative dose accumulation (schematic)
-│   ├── fig-ai.svg                 ← disclosure framework
-│   ├── fig-cohorts.svg            ← cohort design (schematic)
 │   ├── fig-lipid.svg              ← meta-analysis forest plot (schematic)
+│   ├── fig-ai.svg                 ← disclosure framework
 │   └── portrait.jpg               ← the only raster file on the site
-├── tools-generate-figures.py       ← optional: regenerates the five SVGs
+├── tools-generate-figures.py      ← optional: regenerates the four SVGs
 ├── .nojekyll
 └── README.md
 ```
 
 ## Page structure
 
-Hero → numbered index of the five research areas → the five sections → resources →
+Hero → numbered index of the four research areas → the four sections → resources →
 contact. Nav and index entries are anchor links; the nav underlines whichever
 section is under the header as you scroll.
 
@@ -32,23 +31,30 @@ section is under the header as you scroll.
 |---|---------|--------|
 | 01 | Pharmacovigilance — finding the harm | Class-level cardiac arrest ROR forest plot |
 | 02 | Toxicity & dosing — preventing it | Cumulative dose vs. the 24-hour ceiling |
-| 03 | Artificial intelligence — disclosure standards | The where / what / detail framework |
-| 04 | Retrospective cohorts — reading the record | Two-arm cohort design |
-| 05 | Lipid emulsion — does the antidote work? | Pooled meta-analytic estimate |
+| 03 | Lipid emulsion — how well does it work? | Pooled meta-analytic estimate |
+| 04 | Artificial intelligence — disclosure standards | The where / what / detail framework |
 
 Three to four publications per section. No publication counts anywhere; the full
 list is PubMed and Google Scholar links in the contact block.
 
+### Wording the page holds to
+
+- Lipid emulsion is **part of a treatment regimen** — never "the antidote".
+- Never the phrase "lipid rescue" in prose; the one exception is the resource
+  link, labelled by its URL.
+- The page describes the science only. No clinical-practice description, no
+  committee or workgroup roles.
+
 ## The graphics
 
-All five section figures are hand-built SVG — no charting library, no raster
+All four section figures are hand-built SVG — no charting library, no raster
 images, a few kilobytes each, sharp at any zoom, and they follow the reader's
 light/dark setting through a `prefers-color-scheme` block inside each file.
 
 `tools-generate-figures.py` regenerates them, but it is optional — they are
 ordinary editable SVG, so opening one in a text editor or Illustrator/Figma and
-changing it directly works just as well. Two carry real data and are labelled as such in their captions; three
-are schematics and say so.
+changing it directly works just as well. One carries real data and says so in its
+caption; the rest are schematics and say so.
 
 **The forest plot in section 01 is real data** — the class-level reporting odds
 ratios from Perez & Fettiplace, *Br J Anaesth* 2026. If any value changes, edit

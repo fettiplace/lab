@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Regenerate the five section SVGs in assets/img/.
+"""Regenerate the four section SVGs in assets/img/.
 
 Optional. The .svg files it produces are plain, editable SVG — you can change
 them by hand instead and never run this. Usage:  python3 tools-generate-figures.py
@@ -194,38 +194,6 @@ def ai():
                "publisher and location, date used), and the nine categories of use requiring detail.")
 
 
-# ------------------------------------------------------------------- 4. cohorts
-def cohorts():
-    W, H = 780, 340
-    IDX = 250
-    b = []
-    b.append(f'  <path class="hair" stroke-dasharray="4 4" d="M{IDX} 34 V292"/>')
-    b.append(f'  <text class="t cap muted" x="{IDX}" y="24" text-anchor="middle">index procedure</text>')
-    b.append('  <text class="t cap muted" x="0" y="24">look-back</text>')
-    b.append(f'  <text class="t cap muted" x="780" y="24" text-anchor="end">follow-up</text>')
-
-    arms = [
-        ("Exposure A", [(IDX, 300), (IDX, 356), (IDX, 262), (IDX, 388)], 1.0),
-        ("Exposure B", [(IDX, 214), (IDX, 178), (IDX, 262), (IDX, 198)], 0.42),
-    ]
-    y = 62
-    for name, bars, op in arms:
-        b.append(f'  <text class="t lbl ink" x="0" y="{y - 12}" style="font-weight:600">{name}</text>')
-        for j, (x0, w) in enumerate(bars):
-            yy = y + j * 26
-            # look-back stub
-            b.append(f'    <rect class="mark" opacity=".18" x="{x0 - 60 - (j % 3) * 14}" y="{yy}" width="{60 + (j % 3) * 14}" height="8" rx="4"/>')
-            b.append(f'    <rect class="mark" opacity="{op}" x="{x0 + 3}" y="{yy}" width="{w}" height="8" rx="4"/>')
-            b.append(f'    <circle class="mark" opacity="{op}" cx="{x0 + 3 + w + 9}" cy="{yy + 4}" r="4"/>')
-        y += 26 * len(bars) + 44
-    b.append('  <path class="rule" d="M0 300 H780"/>')
-    b.append('  <text class="t ax muted" x="0" y="322">Same index event, two exposure patterns, one outcome window</text>')
-    return svg(W, H, "\n".join(b) + "\n",
-               "Schematic of a retrospective cohort: patients share an index procedure, split into "
-               "two exposure groups with differing follow-up durations and outcome times, each with "
-               "a pre-index look-back window.")
-
-
 # ------------------------------------------------- 5. meta-analysis of efficacy
 def lipid():
     W, H = 780, 360
@@ -273,7 +241,7 @@ def lipid():
 
 
 for name, fn in [("fig-pharmacovigilance", forest), ("fig-dosing", dosing),
-                 ("fig-ai", ai), ("fig-cohorts", cohorts), ("fig-lipid", lipid)]:
+                 ("fig-ai", ai), ("fig-lipid", lipid)]:
     p = OUT / f"{name}.svg"
     p.write_text(fn(), encoding="utf-8")
     print("wrote", p, p.stat().st_size, "bytes")
